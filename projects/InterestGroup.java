@@ -63,7 +63,7 @@ public class InterestGroup extends ContainerBase {
     public boolean removeMember(String member) {
         if (first == null) return false;
 
-        // FIX: caso especial — el miembro es el primero
+        // FIX: special case: the member is the first one
         if (first.value.equals(member)) {
             first = first.next;
             return true;

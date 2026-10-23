@@ -8,12 +8,12 @@ public class TaskList extends BaseContainer{
     
     public void addTask(Task Tarea){
         Node NodeTarea = new Node(Tarea);
-        //si vacia
+        //if empty
         if (first == null){
             first = last = NodeTarea;
             return;
         }
-        //si no
+        //otherwise
         Node puntero = first;
         while(puntero.next != null){
             puntero = puntero.next;
@@ -67,7 +67,7 @@ public class TaskList extends BaseContainer{
         return Tarea;
     }
     
-    //total = bucle con contador
+    //total = loop with a counter
     public int getTimeLeft(){
         int tiempo_total_left = 0;
         Node puntero = first;
@@ -82,7 +82,7 @@ public class TaskList extends BaseContainer{
         
     }
     
-    //recorrer y si completada suma a contador
+    //iterate and, if completed, add to the counter
     public int getTimeSpent(){
         return TimeSpent;
     }

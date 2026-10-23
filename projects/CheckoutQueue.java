@@ -2,7 +2,7 @@ public class CheckoutQueue extends ContainerBase {
 
     private double dailySales;
 
-    // Constructor implícito innecesario eliminado; dailySales = 0.0 por defecto en Java
+    // Unnecessary implicit constructor removed; dailySales = 0.0 by default in Java
 
     public void enqueue(Client client) {
         Node newNode = new Node(client);
